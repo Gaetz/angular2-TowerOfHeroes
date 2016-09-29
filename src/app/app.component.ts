@@ -13,18 +13,9 @@ import { OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   title = 'Tour of Heroes';
-  firstHero: Hero = { id:1, name:'Windstorm'};
-  heroes: Hero[];
-  selectedHero: Hero;
-
+  
   constructor(private heroService: HeroService) {};
 
   ngOnInit() {
-    this.heroes = this.heroService.getHeroes();
-  }
-
-  // Handling hero selection
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
   }
 }
